@@ -1,0 +1,314 @@
+/* Perennial — "annotated manuscript" direction (DESIGN.md).
+   Warm paper ground, near-black ink, semantic claim-status colors used as
+   margin marks and underlines — never fills. Light is the product. */
+
+:root {
+  --color-paper: oklch(97% 0.01 90);
+  --color-sheet: oklch(99% 0.004 90);
+  --color-ink: oklch(21% 0.02 60);
+  --color-ink-muted: oklch(46% 0.015 60);
+  --color-rule: oklch(89% 0.012 90);
+  --color-accent: oklch(45% 0.09 150);
+
+  --color-supported: oklch(55% 0.12 150);
+  --color-contradicted: oklch(55% 0.18 30);
+  --color-superseded: oklch(70% 0.13 80);
+  --color-needs-review: oklch(50% 0.025 250);
+
+  --font-serif: 'Source Serif 4', 'Source Serif Pro', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --measure: 68ch;
+  --text-base: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --text-meta: 0.8125rem;
+  --space-section: clamp(2.75rem, 2rem + 2.5vw, 4.5rem);
+  --radius: 2px;
+  --shadow-sheet:
+    0 1px 2px oklch(21% 0.02 60 / 0.07),
+    0 6px 24px oklch(21% 0.02 60 / 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.masthead {
+  font-family: var(--font-sans);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: calc(var(--measure) + 8rem);
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.masthead-brand {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-size: 1rem;
+}
+
+.masthead-brand .leaf {
+  color: var(--color-accent);
+}
+
+.trust-line {
+  font-size: var(--text-meta);
+  color: var(--color-ink-muted);
+}
+
+.trust-line strong {
+  color: var(--color-supported);
+  font-weight: 600;
+}
+
+.sheet {
+  background: var(--color-sheet);
+  max-width: calc(var(--measure) + 8rem);
+  margin: 1.5rem auto var(--space-section);
+  padding: var(--space-section) clamp(1.25rem, 4vw, 4rem);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sheet);
+}
+
+.survey-header {
+  max-width: var(--measure);
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 2rem;
+}
+
+.survey-kicker {
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.survey-title {
+  font-size: clamp(1.75rem, 1.4rem + 1.8vw, 2.625rem);
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+.survey-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+  color: var(--color-ink-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.survey-meta code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.survey-section {
+  max-width: var(--measure);
+  margin-top: var(--space-section);
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.875rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.section-number {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  color: var(--color-ink-muted);
+}
+
+.section-prose {
+  margin: 0 0 1.75rem;
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+.claim-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* The reviewer's margin mark: a colored rule, never a fill. */
+.claim {
+  border-left: 3px solid var(--claim-color, var(--color-needs-review));
+  padding-left: 1.25rem;
+}
+
+.claim[data-status='supported'] {
+  --claim-color: var(--color-supported);
+}
+.claim[data-status='contradicted'] {
+  --claim-color: var(--color-contradicted);
+}
+.claim[data-status='superseded'] {
+  --claim-color: var(--color-superseded);
+}
+.claim[data-status='needs_review'] {
+  --claim-color: var(--color-needs-review);
+}
+
+.claim-text {
+  margin: 0 0 0.5rem;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklch, var(--claim-color) 45%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
+}
+
+.claim-tags {
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.status-chip {
+  color: var(--claim-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6875rem;
+}
+
+.confidence-chip {
+  color: var(--color-ink-muted);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 0.05rem 0.4rem;
+  font-size: 0.6875rem;
+}
+
+/* Provenance popover styled as a footnote on layered paper. */
+.provenance {
+  margin-top: 0.625rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+}
+
+.provenance summary {
+  cursor: pointer;
+  color: var(--color-ink-muted);
+  width: fit-content;
+}
+
+.provenance summary:hover,
+.provenance summary:focus-visible {
+  color: var(--color-ink);
+  text-decoration: underline;
+}
+
+.provenance[open] summary {
+  color: var(--color-ink);
+}
+
+.provenance-note {
+  margin-top: 0.625rem;
+  background: var(--color-paper);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 0.875rem 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.provenance-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  margin: 0;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-rule);
+}
+
+.provenance-source {
+  margin: 0;
+}
+
+.provenance-source .ids,
+.verification-line code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--color-ink-muted);
+}
+
+.verification-line {
+  margin: 0;
+  color: var(--color-supported);
+}
+
+.run-audit {
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+  color: var(--color-ink-muted);
+  max-width: var(--measure);
+  margin-top: var(--space-section);
+  border-top: 1px solid var(--color-rule);
+  padding-top: 1.5rem;
+}
+
+.run-audit dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin: 0 0 1.25rem;
+}
+
+.run-audit dt {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6875rem;
+}
+
+.run-audit dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+.bibtex summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.bibtex pre {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  background: var(--color-paper);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+}

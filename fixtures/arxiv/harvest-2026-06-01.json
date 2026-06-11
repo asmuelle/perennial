@@ -1,0 +1,138 @@
+{
+  "source": "arxiv",
+  "harvestedAt": "2026-06-01T04:00:00Z",
+  "records": [
+    {
+      "arxivId": "2602.04891v1",
+      "doi": null,
+      "title": "CitationGuard: Detecting Fabricated References in LLM-Generated Manuscripts at Submission Time",
+      "authors": [{ "name": "Mara Lindqvist" }, { "name": "Tomas Okafor" }, { "name": "Jun Park" }],
+      "abstract": "Large language models increasingly draft scientific manuscripts, and a growing fraction of their reference lists cannot be resolved to any real publication. We show that a deterministic resolution pass against Crossref and arXiv, combined with a lightweight metadata-consistency classifier, flags 96.4% of fabricated references at submission time with a 1.8% false-positive rate. The screening pipeline runs in under nine seconds per manuscript on commodity hardware. We release the benchmark of 12,400 manually audited references used in our evaluation.",
+      "categories": ["cs.CL", "cs.DL"],
+      "publishedAt": "2026-05-21T17:42:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2602.04891v1",
+      "references": ["10.1162/qss_a_00112", "10.48550/arXiv.2406.01234", "2512.04417"]
+    },
+    {
+      "arxivId": "2601.11342v1",
+      "doi": null,
+      "title": "Hallucinated Citations in Peer Review: A Large-Scale Audit of Four Machine Learning Venues",
+      "authors": [{ "name": "Aiko Tanaka" }, { "name": "Pieter de Vries" }],
+      "abstract": "Fabricated references have been reported anecdotally, but their prevalence in peer-reviewed venues has not been measured at scale. We audited 48,000 citations sampled from four machine learning venues between 2023 and 2025. We find that one in 277 citations fails to resolve to any existing publication, a tenfold increase over the rate measured in 2023, and that fabricated references cluster in related-work sections. Venue-level screening would have caught 91% of the failures using only public metadata APIs.",
+      "categories": ["cs.DL", "cs.CL"],
+      "publishedAt": "2026-05-12T09:15:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2601.11342v1",
+      "references": ["10.1162/qss_a_00112", "10.1038/s41586-025-0001x", "2511.08821"]
+    },
+    {
+      "arxivId": "2601.11342v2",
+      "doi": null,
+      "title": "Hallucinated Citations in Peer Review: A Large-Scale Audit of Four Machine Learning Venues",
+      "authors": [{ "name": "Aiko Tanaka" }, { "name": "Pieter de Vries" }],
+      "abstract": "Fabricated references have been reported anecdotally, but their prevalence in peer-reviewed venues has not been measured at scale. We audited 52,000 citations sampled from four machine learning venues between 2023 and 2025. We find that one in 277 citations fails to resolve to any existing publication, a tenfold increase over the rate measured in 2023, and that fabricated references cluster in related-work sections. Venue-level screening would have caught 93% of the failures using only public metadata APIs.",
+      "categories": ["cs.DL", "cs.CL"],
+      "publishedAt": "2026-05-28T11:03:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2601.11342v2",
+      "references": ["10.1162/qss_a_00112", "10.1038/s41586-025-0001x", "2511.08821"]
+    },
+    {
+      "arxivId": "2603.02217v1",
+      "doi": "10.48550/arXiv.2603.02217",
+      "title": "Span-Grounded Summarization for Scientific Claim Verification",
+      "authors": [{ "name": "Elena Rossi" }, { "name": "Daniel Achebe" }, { "name": "Sofia Marquez" }],
+      "abstract": "Summaries of scientific literature are only trustworthy if each generated claim can be traced to a verbatim source passage. We introduce a span-grounded decoding constraint that forces every generated claim to quote a contiguous span from a cited source document, rejecting claims for which no supporting span exists. On three claim-verification benchmarks the constraint improves citation precision from 71.2% to 94.8% while reducing factual error rate by half. Human raters preferred span-grounded summaries in 78% of pairwise comparisons.",
+      "categories": ["cs.CL"],
+      "publishedAt": "2026-05-19T14:27:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2603.02217v1",
+      "references": ["10.18653/v1/2020.emnlp-main.609", "2512.04417", "10.48550/arXiv.2406.01234"]
+    },
+    {
+      "arxivId": "2602.09876v1",
+      "doi": null,
+      "title": "Retrieval-Augmented Entailment for Maintaining Living Literature Reviews",
+      "authors": [{ "name": "Noah Feldstein" }, { "name": "Priya Raghunathan" }],
+      "abstract": "Literature reviews decay as new results appear, yet regenerating them from scratch discards accumulated editorial structure. We demonstrate that a two-stage entailment pipeline, pairing a cheap cross-encoder filter with a frontier-model adjudicator restricted to flagged claim-paper pairs, keeps a living review current at 4% of the cost of weekly regeneration. On a 14-month replay of 31,000 arXiv papers the pipeline marked existing claims as supported, contradicted, or superseded with 92.1% agreement against expert annotation. Incremental maintenance also preserved 97% of reviewer-authored prose across updates.",
+      "categories": ["cs.CL", "cs.AI"],
+      "publishedAt": "2026-05-23T08:55:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2602.09876v1",
+      "references": ["10.18653/v1/2020.emnlp-main.609", "10.1162/qss_a_00112", "2511.08821"]
+    },
+    {
+      "arxivId": "2604.01588v1",
+      "doi": "10.48550/arXiv.2604.01588",
+      "title": "SciFactX: Precision-Biased Claim Verification under Distribution Shift",
+      "authors": [{ "name": "Hannah Weiss" }, { "name": "Marcus Oyelaran" }, { "name": "Ting Chen" }],
+      "abstract": "Claim-verification models tuned for balanced accuracy emit confident contradiction labels that collapse under domain shift, eroding expert trust. We present a precision-biased training objective and abstention calibration that defers uncertain pairs to a needs-review state instead of guessing. SciFactX achieves a 3.1% false-alarm rate on contradiction labels across five held-out scientific domains, compared to 17.9% for the strongest balanced baseline. Abstention routes 11% of pairs to human review while preserving 88% recall on true contradictions.",
+      "categories": ["cs.CL", "cs.LG"],
+      "publishedAt": "2026-05-26T16:40:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2604.01588v1",
+      "references": ["10.18653/v1/2020.emnlp-main.609", "10.48550/arXiv.2406.01234"]
+    },
+    {
+      "arxivId": "2605.00321v1",
+      "doi": null,
+      "title": "Provenance-Pinned Generation: Quoting Sources Verbatim Reduces Citation Errors in Survey Writing",
+      "authors": [{ "name": "Gabriel Sørensen" }, { "name": "Lucia Ferraro" }],
+      "abstract": "Survey-writing systems typically paraphrase sources, which obscures whether a cited paper actually supports the sentence citing it. We show that pinning every generated claim to a verbatim quoted span, stored alongside the citation as immutable provenance, reduces unsupported-citation errors by 83% relative to free paraphrase. The provenance store also enables exact recomputation of claim status when new evidence arrives, without re-reading the original papers. We provide an open implementation and a 2,100-claim evaluation set with span-level annotations.",
+      "categories": ["cs.CL", "cs.DL"],
+      "publishedAt": "2026-05-29T10:12:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2605.00321v1",
+      "references": ["2512.04417", "10.1162/qss_a_00112"]
+    },
+    {
+      "arxivId": "2604.09102v1",
+      "doi": "10.1101/2026.04.09102",
+      "title": "Verifier Ensembles Flag Citation-Mill Papers Before Indexing",
+      "authors": [{ "name": "Renata Kovacs" }, { "name": "Olu Adeyemi" }],
+      "abstract": "Citation mills exploit indexing latency to launder fabricated papers into scholarly databases. We find that an ensemble of three weak verifiers, checking reference resolvability, author-affiliation consistency, and venue plausibility, flags 88% of citation-mill submissions before they are indexed, with a false-positive rate of 2.4% on a held-out sample of 9,800 legitimate preprints. Resolvability checks alone account for two thirds of the detection signal.",
+      "categories": ["cs.DL"],
+      "publishedAt": "2026-05-25T07:31:00Z",
+      "oaPdfUrl": null,
+      "references": ["10.1162/qss_a_00112", "2511.08821"]
+    },
+    {
+      "arxivId": "2604.07433v1",
+      "doi": null,
+      "title": "Position: Reporting Standards for Machine-Generated Related-Work Sections",
+      "authors": [{ "name": "Ivo Petrov" }],
+      "abstract": "Machine-generated related-work sections are becoming common in submissions to large venues. This position paper argues for mandatory disclosure of generation tools, resolvable-reference attestations, and span-level provenance for synthesized claims. A survey of current venue policies highlights inconsistent terminology and enforcement gaps. The paper closes with a draft checklist intended for program chairs.",
+      "categories": ["cs.DL", "cs.CL"],
+      "publishedAt": "2026-05-27T12:00:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2604.07433v1",
+      "references": ["10.1162/qss_a_00112"]
+    },
+    {
+      "arxivId": "2603.07712v1",
+      "doi": null,
+      "title": "Diffusion Policies for Dexterous In-Hand Manipulation with Tactile Feedback",
+      "authors": [{ "name": "Wei Zhang" }, { "name": "Carlos Mendes" }],
+      "abstract": "Dexterous in-hand manipulation remains challenging for learned policies. We present a diffusion policy conditioned on high-resolution tactile arrays that rotates unseen objects with a 91% success rate on a 16-DoF hand. Tactile conditioning improves sample efficiency threefold over vision-only baselines.",
+      "categories": ["cs.RO"],
+      "publishedAt": "2026-05-20T18:22:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2603.07712v1",
+      "references": ["10.48550/arXiv.2406.01234"]
+    },
+    {
+      "arxivId": "2602.13990v1",
+      "doi": null,
+      "title": "Sparse Mixture Routing for Vision Transformers at Billion-Image Scale",
+      "authors": [{ "name": "Anna Lindgren" }, { "name": "Rahul Mehta" }, { "name": "Yusuf Demir" }],
+      "abstract": "Scaling vision transformers with dense attention is prohibitively expensive. We introduce a sparse mixture routing scheme that activates 8% of experts per token and matches dense quality at one fifth of the training FLOPs on a billion-image corpus. Routing stability is maintained through an auxiliary balance loss.",
+      "categories": ["cs.CV"],
+      "publishedAt": "2026-05-18T13:48:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2602.13990v1",
+      "references": ["10.48550/arXiv.2406.01234"]
+    },
+    {
+      "arxivId": "2604.05521v1",
+      "doi": null,
+      "title": "A Comprehensive Survey of Revolutionary Paradigm-Shifting Techniques for Trustworthy Citation Generation",
+      "authors": [{ "name": "Q. Q. Synthesis Collective" }],
+      "abstract": "In this groundbreaking and comprehensive survey we present an unprecedented, revolutionary taxonomy of cutting-edge, paradigm-shifting techniques for trustworthy citation generation and hallucinated-reference detection. Our seminal synthesis covers every notable development and delivers game-changing insights for researchers and practitioners alike.",
+      "categories": ["cs.CL", "cs.DL"],
+      "publishedAt": "2026-05-30T02:14:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2604.05521v1",
+      "references": ["10.1162/qss_a_00112", "10.9999/fake.2026.001", "2511.08821"]
+    }
+  ]
+}

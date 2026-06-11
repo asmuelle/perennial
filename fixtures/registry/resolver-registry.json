@@ -1,0 +1,28 @@
+{
+  "describedAs": "Frozen snapshot of Crossref + arXiv resolution responses used by the deterministic fixture resolver. Keys are normalized identifiers; values mirror the metadata a successful resolution returns.",
+  "snapshotAt": "2026-06-01T04:00:00Z",
+  "arxiv": {
+    "2602.04891": { "title": "CitationGuard: Detecting Fabricated References in LLM-Generated Manuscripts at Submission Time", "httpStatus": 200 },
+    "2601.11342": { "title": "Hallucinated Citations in Peer Review: A Large-Scale Audit of Four Machine Learning Venues", "httpStatus": 200 },
+    "2603.02217": { "title": "Span-Grounded Summarization for Scientific Claim Verification", "httpStatus": 200 },
+    "2602.09876": { "title": "Retrieval-Augmented Entailment for Maintaining Living Literature Reviews", "httpStatus": 200 },
+    "2604.01588": { "title": "SciFactX: Precision-Biased Claim Verification under Distribution Shift", "httpStatus": 200 },
+    "2605.00321": { "title": "Provenance-Pinned Generation: Quoting Sources Verbatim Reduces Citation Errors in Survey Writing", "httpStatus": 200 },
+    "2604.09102": { "title": "Verifier Ensembles Flag Citation-Mill Papers Before Indexing", "httpStatus": 200 },
+    "2604.07433": { "title": "Position: Reporting Standards for Machine-Generated Related-Work Sections", "httpStatus": 200 },
+    "2603.07712": { "title": "Diffusion Policies for Dexterous In-Hand Manipulation with Tactile Feedback", "httpStatus": 200 },
+    "2602.13990": { "title": "Sparse Mixture Routing for Vision Transformers at Billion-Image Scale", "httpStatus": 200 },
+    "2604.05521": { "title": "A Comprehensive Survey of Revolutionary Paradigm-Shifting Techniques for Trustworthy Citation Generation", "httpStatus": 200 },
+    "2512.04417": { "title": "Benchmarking Reference Resolvability Across Scholarly Databases", "httpStatus": 200 },
+    "2511.08821": { "title": "Metadata Consistency Signals for Detecting Fabricated Scholarship", "httpStatus": 200 }
+  },
+  "doi": {
+    "10.1162/qss_a_00112": { "title": "Quantifying Citation Integrity in the Age of Generated Text", "httpStatus": 200 },
+    "10.1038/s41586-025-0001x": { "title": "The Rise of Fabricated References in Scientific Manuscripts", "httpStatus": 200 },
+    "10.18653/v1/2020.emnlp-main.609": { "title": "Fact or Fiction: Verifying Scientific Claims", "httpStatus": 200 },
+    "10.48550/arXiv.2406.01234": { "title": "Trust Calibration for Automated Literature Synthesis", "httpStatus": 200 },
+    "10.48550/arXiv.2603.02217": { "title": "Span-Grounded Summarization for Scientific Claim Verification", "httpStatus": 200 },
+    "10.48550/arXiv.2604.01588": { "title": "SciFactX: Precision-Biased Claim Verification under Distribution Shift", "httpStatus": 200 },
+    "10.1101/2026.04.09102": { "title": "Verifier Ensembles Flag Citation-Mill Papers Before Indexing", "httpStatus": 200 }
+  }
+}

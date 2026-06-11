@@ -1,0 +1,27 @@
+{
+  "id": "topic-citation-integrity",
+  "researchQuestion": "How can fabricated references and unsupported claims in LLM-generated scientific writing be detected and prevented?",
+  "fieldScope": ["cs.CL", "cs.DL", "cs.AI", "cs.LG"],
+  "seedDraft": null,
+  "status": "active",
+  "weeklyBudgetCents": 370,
+  "cadence": "weekly",
+  "outlineHints": [
+    {
+      "heading": "Prevalence and audits of fabricated citations",
+      "keywords": ["audit", "peer review", "prevalence", "fabricated", "hallucinated citations"]
+    },
+    {
+      "heading": "Detection and screening at submission time",
+      "keywords": ["detect", "screening", "submission", "verifier", "flagging"]
+    },
+    {
+      "heading": "Span-grounded generation and claim verification",
+      "keywords": ["span", "grounded", "provenance", "verbatim", "entailment", "claim verification"]
+    },
+    {
+      "heading": "Maintaining living literature reviews",
+      "keywords": ["living", "maintenance", "retrieval-augmented", "continual", "versioned"]
+    }
+  ]
+}

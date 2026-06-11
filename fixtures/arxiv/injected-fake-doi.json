@@ -1,0 +1,17 @@
+{
+  "source": "arxiv",
+  "harvestedAt": "2026-06-01T04:00:00Z",
+  "records": [
+    {
+      "arxivId": "2699.99999v1",
+      "doi": "10.5555/perennial.fake.999",
+      "title": "Self-Certifying Citation Chains Eliminate Reference Screening Overhead",
+      "authors": [{ "name": "Nonexistent Author" }],
+      "abstract": "Reference screening is widely considered necessary for machine-generated surveys. We show that self-certifying citation chains eliminate screening overhead entirely while guaranteeing resolvability by construction. Experiments on a private corpus confirm the approach.",
+      "categories": ["cs.CL", "cs.DL"],
+      "publishedAt": "2026-05-31T23:59:00Z",
+      "oaPdfUrl": "https://arxiv.org/pdf/2699.99999v1",
+      "references": ["10.1162/qss_a_00112"]
+    }
+  ]
+}
