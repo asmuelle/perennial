@@ -2,8 +2,7 @@
 
 > A literature review that never goes stale: subscribe to a research question and get a versioned, citation-verified survey that ingests each week's papers and flags which of its own claims are now supported, contradicted, or superseded — with every reference verified to actually exist.
 
-**Category:** LLM wiki / auto-research (living documents + delta alerts, à la Karpathy) · **Status:** 🟡 Tier 2 — strong economics, must outrun ChatGPT/Perplexity feature-shipping
-
+**Category:** LLM wiki / auto-research (living documents + delta alerts, à la Karpathy) 
 ## Scorecard
 
 | Metric | Score |
