@@ -1,0 +1,44 @@
+# Perennial
+
+> A literature review that never goes stale. Subscribe to a research question and Perennial writes a structured, citation-verified survey — then ingests each week's papers and flags which of its own claims are now supported, contradicted, or superseded, with every reference verified to actually exist.
+
+## What it is
+
+Perennial maintains a single living literature survey rather than running one-shot searches. Each week it ingests new work from arXiv, OpenReview, bioRxiv, PubMed and Semantic Scholar, deduplicates it, and integrates it into only the affected sections. Every claim is pinned to a paper, section, and quoted span, and every cited reference is resolved against Crossref and arXiv to confirm the DOI or arXiv ID exists — directly attacking fabricated and citation-mill sources. It is a research assistance tool in active development (pre-launch).
+
+## Who it's for
+
+- Researchers tracking the questions their work depends on.
+- Principal investigators (PIs) who want to watch their own published claims and hear first if a new paper contradicts or supersedes them.
+- Labs and teams who want a shared, canonical living review as reference infrastructure that survives graduations.
+
+## Key features
+
+- A STORM-style structured survey generated claim by claim from a seeded research question or your own related-work draft.
+- Citation integrity screen: every reference verified to resolve to a real DOI or arXiv ID; non-resolving sources are quarantined.
+- Weekly delta digest: one plain-language email when new results actually touch your survey — no "nothing changed" noise.
+- Supported / contradicted / superseded claim labels, treated as flagged signals (not verdicts) and linked to the quoted span.
+- Full version history with diffs and per-claim provenance.
+- Export verified BibTeX, Markdown, or straight to Overleaf.
+
+## Pricing
+
+Planned launch tiering (pre-launch; not live checkout):
+
+- Seedling — $0. 1 living review, weekly delta digest, verified citations. Freezes 30 days after you stop paying.
+- Individual — $19 / month. 3 living reviews, full version history & diffs, verified BibTeX & Overleaf export, per-claim provenance.
+- Pro — $49 / month. 10 living reviews, contradiction monitoring on your own claims, everything in Individual.
+- Lab plan — $12 / seat / month (5-seat minimum). Shared living reviews, lab onboarding & reference infrastructure, artifact survives graduations.
+
+University site licenses are on the roadmap. Pricing may change before release.
+
+## FAQ highlights
+
+- Different from Elicit, Consensus, or Scite: those search or look up; Perennial maintains a single living survey and flags how existing claims have changed. The job is maintenance, not search.
+- "Every reference verified to exist": each reference is resolved against Crossref and arXiv before a paper is integrated; non-resolving sources are filtered out.
+- Trusting the labels: supported / contradicted / superseded are carefully-flagged signals, not verdicts, produced by a two-stage classifier-plus-adjudication design and always linked to the quoted span.
+- Best fields today: strongest in preprint-native fields like machine learning and CS where full text is openly available; coverage behind publisher paywalls is more limited.
+
+## Link
+
+- Home: https://asmuelle.github.io/perennial/
