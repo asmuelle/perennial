@@ -1,5 +1,7 @@
 # Perennial
 
+[![CI](https://github.com/asmuelle/perennial/actions/workflows/ci.yml/badge.svg)](https://github.com/asmuelle/perennial/actions/workflows/ci.yml)
+
 > A literature review that never goes stale: subscribe to a research question and get a versioned, citation-verified survey that ingests each week's papers and flags which of its own claims are now supported, contradicted, or superseded — with every reference verified to actually exist.
 
 **Category:** LLM wiki / auto-research (living documents + delta alerts, à la Karpathy) 
