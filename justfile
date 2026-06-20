@@ -50,6 +50,10 @@ lint: _bootstrapped
 format: _bootstrapped
     pnpm format
 
+# audit dependencies for high+ severity advisories; CI gate
+audit: _bootstrapped
+    pnpm audit --audit-level=high
+
 # Type-check all packages (tsc --noEmit)
 typecheck: _bootstrapped
     pnpm typecheck
@@ -59,4 +63,4 @@ build: _bootstrapped
     pnpm build
 
 # Full gate: lint + typecheck + test + build (what CI runs)
-ci: lint typecheck test build
+ci: lint typecheck test build audit
