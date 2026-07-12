@@ -1,0 +1,13 @@
+{
+  "name": "@perennial/okf-export",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {
+    "@perennial/core": "workspace:*",
+    "@okf/core": "workspace:*"
+  }
+}
