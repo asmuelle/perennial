@@ -12,7 +12,7 @@
     "@perennial/core": "workspace:*",
     "@perennial/fixtures": "workspace:*",
     "@perennial/pipeline": "workspace:*",
-    "next": "^16.2.9",
+    "next": "^16.2.11",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
